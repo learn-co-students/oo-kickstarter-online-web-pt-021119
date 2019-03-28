@@ -9,8 +9,11 @@ class Project
 
   def add_backer(back)
     @backers << back
+    back.backed_projects << self
   end 
   
   def back_project
+  #binding.pry
+end
   
 end
