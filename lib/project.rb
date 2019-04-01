@@ -8,12 +8,9 @@ class Project
     @backers = []
   end
 
-  def add_backer(backer)
-    @backers << backer
-    #@backers << backer.name
-    @backer << title
+  def add_backer(name)
+    @backers << name
+    @backers << Backer.new(name)
   end
-
-#Close! if you write `@backed_projects` in `add_backer` it’s going to look for a `backed_projects` variable in `Project`. But it’s not in that class--it’s in `Backer`.
 
 end

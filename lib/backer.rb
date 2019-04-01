@@ -10,8 +10,7 @@ class Backer
 
   def back_project(project)
     @backed_projects << project
-    #@backers << backer
-    #But, you do need another line of code that adds the instance of the `project` to the `backer`’s `backed_projects`
+    @backed_projects << Project.new(project)
   end
 
 end
